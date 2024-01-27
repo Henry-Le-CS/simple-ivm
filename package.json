@@ -1,0 +1,23 @@
+{
+  "name": "simple-ivm",
+  "version": "1.0.0",
+  "description": "build and test isolated-vm with simple libraries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Henry-Le-CS/simple-ivm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Henry-Le-CS/simple-ivm/issues"
+  },
+  "homepage": "https://github.com/Henry-Le-CS/simple-ivm#readme",
+  "dependencies": {
+    "isolated-vm": "^4.7.2",
+    "lodash": "^4.17.21"
+  }
+}

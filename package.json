@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Henry-Le-CS/simple-ivm#readme",
   "dependencies": {
     "isolated-vm": "^4.7.2",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "uuid": "^9.0.1"
   }
 }

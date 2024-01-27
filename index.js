@@ -4,8 +4,12 @@ const fs = require('fs')
 const isolate = new ivm.Isolate({ memoryLimit: 8 /* MB */ })
 const context = isolate.createContextSync()
 
-const libCode = fs.readFileSync('./lib/lodash.js', 'utf-8')
-isolate.compileScriptSync(libCode).runSync(context)
+const libEntries = ['./lib/lodash.js']
+
+for (const entry of libEntries) {
+    const libCode = fs.readFileSync(entry, 'utf-8')
+    isolate.compileScriptSync(libCode).runSync(context)
+}
 
 const userFn = fs.readFileSync('./example-code.txt', 'utf-8')
 
